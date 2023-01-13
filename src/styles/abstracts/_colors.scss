@@ -1,12 +1,13 @@
 $colors: (
   neutral: (
     light: hsl(0, 0%, 100%),
-    normal: hsl(0, 0%, 50%),
-    dark: hsl(0, 0%, 0%),
+    normal: hsl(0, 0%, 95%),
+  ),
+  brand: (
+    dark: hsl(30, 77%, 52%),
   ),
   primary: (
-    light: hsl(195, 53%, 79%),
-    normal: hsl(240, 100%, 50%),
-    dark: hsl(240, 100%, 27%),
+    normal: hsl(185, 98%, 23%),
+    dark: hsl(179, 100%, 13%),
   ),
 );

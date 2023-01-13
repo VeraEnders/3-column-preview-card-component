@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+.card {
+  padding: 3rem;
+  padding-bottom: 2.81rem;
+  max-width: 20.45rem;
+  margin-inline: auto;
+}
+
+.card-1 {
+  background-color: clr(brand, dark);
+  border-radius: 0.625rem 0.625rem 0 0;
+  .btn {
+    color: clr(brand, dark);
+  }
+  @include mq-large {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+}
+
+.card-2 {
+  background-color: clr(primary, normal);
+  .btn {
+    color: clr(primary, normal);
+  }
+}
+
+.card-3 {
+  background-color: clr(primary, dark);
+  border-radius: 0 0 0.625rem 0.625rem;
+  .btn {
+    color: clr(primary, dark);
+  }
+  @include mq-large {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+}
+
+.card__headline {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__desc {
+  line-height: 1.56rem;
+  margin-bottom: 1.56rem;
+  @include mq-large {
+    margin-bottom: 5.3rem;
+  }
+}

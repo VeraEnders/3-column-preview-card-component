@@ -1,8 +1,48 @@
+@use "../abstracts" as *;
+
+html {
+  min-height: 100vh;
+  font-family: $ff-sans;
+}
+
+body {
+  font-size: size(15);
+  background-color: clr(neutral, normal);
+  color: clr(neutral, light);
+  transition: all 0.5s ease-in-out;
+}
+
+h2 {
+  font-family: $ff-cond;
+  font-size: size(40);
+  text-transform: uppercase;
+}
+
+.wrapper {
+  padding: 5.5rem 1.5rem 1.5rem;
+  transition: all 0.5s ease-in-out;
+  @include mq-large {
+    padding-top: 10.625rem;
+  }
+}
+
+.grid {
+  @include mq-large {
+    display: grid;
+    grid-template-columns: repeat(3, 19.125rem);
+    justify-content: center;
+  }
+}
 
 .attribution { 
-  font-size: 11px; 
-  text-align: center; 
+  font-size: 0.75rem;
+  text-align: center;
+  color: clr(primary, normal);  
   a { 
-    color: hsl(228, 45%, 44%); 
+    color: clr(primary, dark);
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: clr(brand, dark);
+    }
   }
 }

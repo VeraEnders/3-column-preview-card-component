@@ -5,6 +5,9 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 ol,
@@ -17,12 +20,127 @@ a {
   color: inherit;
 }
 
+html {
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  font-size: 0.9375rem;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  padding: 5.5rem 1.5rem 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    padding-top: 10.625rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 19.125rem);
+    justify-content: center;
+  }
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.75rem;
   text-align: center;
+  color: hsl(185deg, 98%, 23%);
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(179deg, 100%, 13%);
+  transition: all 0.4s ease-in-out;
+}
+.attribution a:hover {
+  color: hsl(30deg, 77%, 52%);
+}
+
+.card {
+  padding: 3rem;
+  padding-bottom: 2.81rem;
+  max-width: 20.45rem;
+  margin-inline: auto;
+}
+
+.card-1 {
+  background-color: hsl(30deg, 77%, 52%);
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.card-1 .btn {
+  color: hsl(30deg, 77%, 52%);
+}
+@media (min-width: 1000px) {
+  .card-1 {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+}
+
+.card-2 {
+  background-color: hsl(185deg, 98%, 23%);
+}
+.card-2 .btn {
+  color: hsl(185deg, 98%, 23%);
+}
+
+.card-3 {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+.card-3 .btn {
+  color: hsl(179deg, 100%, 13%);
+}
+@media (min-width: 1000px) {
+  .card-3 {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+}
+
+.card__headline {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__desc {
+  line-height: 1.56rem;
+  margin-bottom: 1.56rem;
+}
+@media (min-width: 1000px) {
+  .card__desc {
+    margin-bottom: 5.3rem;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.85rem 1.85rem;
+  border-radius: 1.6rem;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  border-color: hsl(0deg, 0%, 100%);
+  background-color: transparent;
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media (min-width: 1000px) {
+  .btn__container {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
