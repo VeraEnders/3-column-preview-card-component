@@ -12,9 +12,3 @@
     color: clr(neutral, light);
   }
 }
-
-.btn__container {
-  @include mq-large {
-    text-align: center;
-  }
-}
